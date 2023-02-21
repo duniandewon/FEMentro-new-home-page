@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+
+.header {
+  grid-area: header;
+
+  &__content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    justify-items: start;
+  }
+
+  &__title {
+    color: $clr-neutral-800;
+    font-weight: $fw-extra-bold;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  @media (min-width: 900px) {
+    &__content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__title {
+      grid-row: 1 / span 2;
+    }
+  }
+}

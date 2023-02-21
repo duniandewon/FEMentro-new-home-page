@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.news-preview {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 20rem;
+
+  &__img {
+    max-width: 5.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    P:first-child {
+      font-size: 1.8rem;
+      color: $clr-neutral-400;
+      font-weight: $fw-bold;
+    }
+  }
+}

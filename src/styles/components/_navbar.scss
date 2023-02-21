@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+
+  grid-area: navbar;
+
+  &__toggler {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+
+  
+  @media (min-width: 739px) {
+    &__toggler {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.button {
+  background-color: $clr-primary-400;
+  color: $clr-neutral-200;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.8rem 1.3rem;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $clr-neutral-800;
+  }
+}

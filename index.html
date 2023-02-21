@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE Mentor - News Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <nav class="navbar">
+        <img src="/images/logo.svg" alt="logo" class="logo" />
+        <div class="nav">
+          <p class="nav__item">home</p>
+          <p class="nav__item">news</p>
+          <p class="nav__item">popular</p>
+          <p class="nav__item">Trending</p>
+          <p class="nav__item">Categories</p>
+        </div>
+        <button id="open-menu" class="navbar__toggler">
+          <img src="/images/icon-menu.svg" alt="" />
+        </button>
+      </nav>
+      <div id="mobile-menu" class="mobile-menu">
+        <button id="close-menu" class="mobile-menu__close">
+          <img src="/images/icon-menu-close.svg" alt="" />
+        </button>
+        <p class="mobile-menu__item">home</p>
+        <p class="mobile-menu__item">news</p>
+        <p class="mobile-menu__item">popular</p>
+        <p class="mobile-menu__item">Trending</p>
+        <p class="mobile-menu__item">Categories</p>
+      </div>
+      <header class="header">
+        <picture class="header__img">
+          <source
+            srcset="/images/image-web-3-desktop.jpg"
+            media="(min-width:739px)"
+          />
+          <img
+            src="/images/image-web-3-mobile.jpg"
+            alt="The bright future of web 3.0?"
+          />
+        </picture>
+        <div class="header__content">
+          <h2 class="header__title">The Bright Future of Web 3.0?</h2>
+          <p class="header__excerpt">
+            We dive into the next evolution if the web that claims to put the
+            power of paltforms back into the hands of people. But is it realy
+            fulfillling its promise?
+          </p>
+          <button class="button">Read More</button>
+        </div>
+      </header>
+      <aside class="aside">
+        <h2 class="aside__title">New</h2>
+        <div class="aside__item">
+          <p>Hudrogen VS Electric Cars</p>
+          <p>Will hydrogen fulled cars ever catch up EVs?</p>
+        </div>
+        <div class="aside__item">
+          <p>The downside od AI Artistry</p>
+          <p>
+            What are the possible adverse effects if on-demand AI image
+            generator?
+          </p>
+        </div>
+        <div class="aside__item">
+          <p>Is VC Funding drying Up?</p>
+          <p>
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </aside>
+      <footer class="footer">
+        <div class="news-preview">
+          <img
+            src="/images/image-retro-pcs.jpg"
+            alt="Review Retro PCs"
+            class="news-preview__img"
+          />
+          <div class="news-preview__content">
+            <p>01</p>
+            <h3 class="news-preview__title">Review Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgtrades?</p>
+          </div>
+        </div>
+        <div class="news-preview">
+          <img
+            src="/images/image-top-laptops.jpg"
+            alt="Top 10 Laptops of 2022"
+            class="news-preview__img"
+          />
+          <div class="news-preview__content">
+            <p>02</p>
+            <h3 class="news-preview__title">Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="news-preview">
+          <img
+            src="/images/image-gaming-growth.jpg"
+            alt="The Growth of Gaming"
+            class="news-preview__img"
+          />
+          <div class="news-preview__content">
+            <p>03</p>
+            <h3 class="news-preview__title">The Growth of Gaming</h3>
+            <p>how the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

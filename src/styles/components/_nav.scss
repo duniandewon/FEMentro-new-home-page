@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.nav {
+  display: none;
+
+  gap: 1.8rem;
+  text-transform: capitalize;
+  color: $clr-neutral-600;
+  font-weight: $fw-bold;
+
+  &__item {
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+
+  @media (min-width: 739px) {
+    display: flex;
+  }
+}
